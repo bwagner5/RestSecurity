@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.1.8.RELEASE'
+        springBootVersion = '1.1.12.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -19,7 +19,7 @@ targetCompatibility = 1.8
 
 jar {
     baseName = 'rest-sec-isa656'
-    version = '1.0'
+    version = '1.1'
 }
 
 repositories {
@@ -33,10 +33,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     runtime("org.hsqldb:hsqldb")
-    compile("org.xerial:sqlite-jdbc:3.7.2")
+    compile("org.xerial:sqlite-jdbc:3.8.11.2")
 
     compile("org.springframework.boot:spring-boot-starter-security")
-    compile("org.springframework.security.oauth:spring-security-oauth2:2.0.3.RELEASE")
+    compile("org.springframework.security.oauth:spring-security-oauth2:2.0.8.RELEASE")
 
     compile("org.projectlombok:lombok:1.14.8")
 }

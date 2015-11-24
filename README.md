@@ -30,3 +30,12 @@ When running the following requests should give you results. Replace $token with
 When you use the web client URL the token includes the role and logged in user, so Mary still can't access John's record.
 
 ** NOTE When using the web client, change the `#` to a `?` for a URI Query Parameter.
+
+
+Using with TLS
+--------------------
+
+URLs over TLS are:
+   
+   - https://localhost:8444/oauth/authorize?client_id=web&response_type=token
+   - https://localhost:8443
